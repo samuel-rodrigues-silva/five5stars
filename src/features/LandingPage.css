@@ -302,7 +302,7 @@ h1 {
   }
 
   .BackgroundStrap {
-    clip-path: ellipse(97vw 80vh at 0% 0%);
+    clip-path: ellipse(100vw 80vh at 0% 0%);
   }
 }
 @media (min-width: 700px) {
