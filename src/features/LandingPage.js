@@ -2,20 +2,11 @@ import React from 'react';
 import ReactPlayer from 'react-player';
 
 import ReactWhatsapp from 'react-whatsapp';
-import {
-  ACCHIEVEMENT,
-  ACCOMPLISHMENT,
-  MEDALS,
-  METHODS,
-  STARS,
-  TARGETSUBJ,
-} from '../utils/copy';
+import { ACCHIEVEMENT, ABOUT, MEDALS, STARS } from '../utils/copy';
 import star from '../assets/star.svg';
 import wpp from '../assets/wpp.svg';
 import medal from '../assets/medal.svg';
 import fit from '../assets/fit.svg';
-import sad from '../assets/sad.svg';
-
 import './LandingPage.css';
 
 export const LandingPage = () => {
@@ -35,8 +26,19 @@ const Main = () => {
         number='+55-35-9202-5067'
         message='QUERO PARTICIPAR DO EVENTO'
       >
-        Quero participar <img src={wpp} alt='Whatsapp'></img>
+        QUERO IR AO EVENTO <img src={wpp} alt='Whatsapp'></img>
       </ReactWhatsapp>
+    </div>
+  );
+};
+
+const ABOUTCm = () => {
+  return (
+    <div className='ABOUT'>
+      <h1>QUEM É O SEU TUTOR</h1>
+      {ABOUT.map((acc) => (
+        <p className='Skill'>{acc}</p>
+      ))}
     </div>
   );
 };
@@ -52,7 +54,9 @@ const Content = () => {
         <div className='Row'>
           <Achievement />
         </div>
-        <Target />
+
+        <ABOUTCm></ABOUTCm>
+        <Medals />
         <div className='Row stars'>
           <Card infoList={STARS} />
         </div>
@@ -87,20 +91,6 @@ const Card = ({ infoList }) => {
   );
 };
 
-const Target = () => {
-  return (
-    <div className='TargetSubj'>
-      <h1>FIVE STARS É PARA VOCÊ</h1>
-      {TARGETSUBJ.map((trg) => (
-        <p>
-          <img src={sad} alt='' />
-          {trg}
-        </p>
-      ))}
-    </div>
-  );
-};
-
 const Achievement = () => {
   return (
     <React.Fragment>
@@ -117,18 +107,21 @@ const Achievement = () => {
 const Accomplishment = () => {
   return (
     <div className='Accomplishment'>
-      <h1>FIVE STARS</h1>
-      {ACCOMPLISHMENT.map((acc) => (
-        <span className='Skill'>{acc}</span>
-      ))}
-      <span className='Method'>
-        <h2>Método de ensino</h2>
-        <p>SPRINT DE RESULTADOS.</p>
-        {METHODS.map((acc) => (
-          <p>{acc}</p>
-        ))}
+      <ReactWhatsapp
+        className='CTABtn'
+        number='+55-35-9202-5067'
+        message='QUERO PARTICIPAR DO EVENTO'
+        style={{ width: '100%' }}
+      >
+        QUERO PARTICIPAR <img src={wpp} alt='Whatsapp'></img>
+      </ReactWhatsapp>
+      <h1>FIVE STARS JIU JITSU</h1>
+      <h2>Ajuda pessoas a se desenvolverem mais do que pensam que são</h2>
+
+      <span className='ROW'>
+        <h1>MÉTODO DE ENSINO SPRINT DE RESULTADOS </h1>
+        <h3>Transforma 3 dias de frustração em 1 dia de resultado </h3>
       </span>
-      <Medals />
     </div>
   );
 };

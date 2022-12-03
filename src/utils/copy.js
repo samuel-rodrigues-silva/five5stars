@@ -33,15 +33,10 @@ export const MEDALS = [
   'IBJJF - EUROPE',
 ];
 
-export const METHODS = [
-  'MÉTODO CONVENCIONAL - 76 min ativo + 20 intervalos = 96 min',
-  'MÉTODO SPRINT DE RESULTADOS - 31 min ativo + 5 min intervalos = 36 min',
-];
-
-export const ACCOMPLISHMENT = [
-  'Há mais de 10 anos, vivi o JJ na mais alta performance, me desenvolvendo através de treinos que duravam 4 a 6 horas/dia 5x semana.',
-  'Quem me ensinou possuía 30 anos de JJ old school, e o outro possuía uma didática digna de um chefe da PRF RJ-SP, ensinado em sua base por Royler Gracie.',
-  ' Formado em ed.física e expert em experiência do cliente.',
+export const ABOUT = [
+  'HÁ MAIS DE 10 ANOS, VIVEU O JJ NA MAIS ALTA PERFORMANCE, SE DESENVOLVENDO EM TREINOS DE  4 A 6 HORAS/DIA, 5X SEMANA.',
+  'POSSUI + DE 70 TÍTULOS, DENTRE ELES OURO PAN 2X, OURO BRASILEIRO, OURO SUL AMERICANO 2X, OURO MUNDIAL CBJJE E EXPERIÊNCIA EM MUNDIAL E EUROPEU IBJJF.',
+  'FORMADO EM ED.FÍSICA E EXPERT EM EXPERIÊNCIA DO CLIENTE.',
 ];
 export const TARGETSUBJ = [
   'Extremamente atarefado com rotinas muito monótonas de trabalho.',
