@@ -270,6 +270,7 @@ h1 {
   }
   .Row {
     flex-direction: column;
+    padding: 0px;
   }
 
   .stars {
@@ -280,6 +281,15 @@ h1 {
     gap: 50px;
   }
 
+  .Medal {
+    margin-top: 5px;
+    margin-left: 24%;
+  }
+
+  .Accomplishment {
+    width: 90%;
+  }
+
   .Achievement {
     margin-block: 10px;
   }
@@ -287,7 +297,11 @@ h1 {
   .Video_Container {
     max-width: 90vw;
     margin: 0;
-    margin-top: 20px;
+    margin-top: 40px;
+  }
+
+  .Achievement {
+    width: 90%;
   }
 
   .TargetSubj {
