@@ -53,7 +53,7 @@ const Content = () => {
           <Achievement />
         </div>
         <Target />
-        <div className='Row'>
+        <div className='Row stars'>
           <Card infoList={STARS} />
         </div>
       </div>
@@ -140,8 +140,8 @@ const InnerVideoDisplay = () => {
         controls={true}
         url='https://youtu.be/iR8X8nfhhn4'
         autoPlay
-        style={{ transform: 'scale(1.03)' }}
-        height='90vh'
+        style={{ transform: 'scale(1.03)', paddingBottom: '10px' }}
+        height='85vh'
       />
     </div>
   );
