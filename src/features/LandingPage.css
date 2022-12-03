@@ -1,0 +1,247 @@
+@keyframes hover {
+  from {
+    transform: scale(1);
+    box-shadow: 0px 8px 20px gray;
+  }
+  to {
+    transform: scale(1.2);
+    box-shadow: 0px 14px 14px gray;
+  }
+}
+
+.Container {
+  box-sizing: border-box;
+  width: 100%;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.Main {
+  width: 100vw;
+  margin: 0;
+  overflow: hidden;
+  padding-inline: 100px;
+  padding-block: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.CTABtn {
+  margin: auto;
+  margin-bottom: 20px;
+  height: 50px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.CTABtn img {
+  margin-inline-start: 10px;
+}
+
+.Row {
+  width: 100%;
+  padding: 20px;
+  margin-block-end: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.Row * {
+  margin-inline: 2px;
+}
+
+.Column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 56px;
+}
+
+.Skill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  font-weight: 500;
+  font-size: 22px;
+  width: 100%;
+  min-height: 25px;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+.Card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+  font-size: 13px;
+  font-weight: 500;
+  margin-inline-end: 10px;
+  margin-block-end: 8px;
+}
+
+.Card img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 10px;
+}
+
+.Medal {
+  display: flex;
+  align-self: flex-start;
+  font-weight: 700;
+  font-size: 14;
+}
+
+.Medal img {
+  width: 40px;
+  height: 40px;
+}
+
+.TargetSubj {
+  margin-block: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: start;
+  padding: 20px;
+  width: 55vw;
+  height: 60vh;
+  border-radius: 12px;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 10px gray;
+  background-color: #fff;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.TargetSubj h1 {
+  font-weight: 800;
+  font-size: 38px;
+}
+.TargetSubj p {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.Achievement {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 180px;
+  height: 160px;
+  border-radius: 12px;
+  border-top: 3px solid #2790b0;
+  box-sizing: border-box;
+  box-shadow: 0px 8px 20px gray;
+}
+
+.Achievement p {
+  color: #828282;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.Achievement:hover {
+  animation: hover 1s;
+  animation-fill-mode: forwards;
+}
+
+.Method {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Method p {
+  font-weight: 500;
+  font-size: 14px;
+  display: inline;
+}
+
+.Video_Container {
+  height: 100%;
+  max-width: 30vw;
+  margin: 5px 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.BackgroundStrap {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 100vw;
+  height: 80px;
+  background-color: #2790b0;
+}
+
+.BackgroundInfo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 20px;
+  background-color: #2790b0;
+  color: #fff;
+  padding: 5px;
+}
+
+@media (max-width: 1000px) {
+  .Main {
+    padding-inline: 20px;
+  }
+  .Row {
+    flex-direction: column;
+  }
+
+  .Achievement {
+    margin-block: 10px;
+  }
+
+  .Video_Container {
+    max-width: 80vw;
+    margin: 0;
+  }
+
+  .TargetSubj {
+    width: 80vw;
+    height: 100%;
+  }
+
+  .BackgroundInfo {
+    width: 100%;
+    height: 50px;
+    word-wrap: break-word;
+  }
+}
+@media (min-width: 700px) {
+  .medal-row {
+    flex-direction: row;
+  }
+}
