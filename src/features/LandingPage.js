@@ -13,6 +13,8 @@ import {
 import star from '../assets/star.svg';
 import wpp from '../assets/wpp.svg';
 import medal from '../assets/medal.svg';
+import fit from '../assets/fit.svg';
+import sad from '../assets/sad.svg';
 
 import './LandingPage.css';
 
@@ -90,7 +92,10 @@ const Target = () => {
     <div className='TargetSubj'>
       <h1>FIVE STARS É PARA VOCÊ</h1>
       {TARGETSUBJ.map((trg) => (
-        <p>{trg}</p>
+        <p>
+          <img src={sad} alt='' />
+          {trg}
+        </p>
       ))}
     </div>
   );
@@ -102,6 +107,7 @@ const Achievement = () => {
       {ACCHIEVEMENT.map((acch) => (
         <div className='Achievement'>
           <p>{acch}</p>
+          <img src={fit} alt='' />
         </div>
       ))}
     </React.Fragment>

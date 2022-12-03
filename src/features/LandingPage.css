@@ -130,22 +130,23 @@ h1 {
   padding: 20px;
   width: 55vw;
   height: 60vh;
-  border-radius: 18px;
   box-sizing: border-box;
   box-shadow: 0px 4px 10px gray;
   background-color: #fff;
-  border-radius: 8px;
-  font-size: 14px;
+  border-radius: 18px;
 }
 
 .TargetSubj h1 {
   font-weight: 800;
   font-size: 38px;
-  text-align: center;
+  align-self: center;
 }
 .TargetSubj p {
   font-weight: 400;
   font-size: 18px;
+}
+.TargetSubj img {
+  margin-inline: 8px;
 }
 
 .Accomplishment {
@@ -162,12 +163,18 @@ h1 {
   border-top: 3px solid #2790b0;
   box-sizing: border-box;
   box-shadow: 0px 2px 10px gray;
+  position: relative;
 }
 
 .Achievement p {
   color: #828282;
   font-weight: 600;
   font-size: 16px;
+}
+.Achievement img {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
 }
 
 .Achievement:hover {
@@ -219,6 +226,7 @@ h1 {
   color: #fff;
   padding: 5px;
   box-sizing: border-box;
+  z-index: 10;
 }
 
 @media (max-width: 1000px) {
