@@ -119,7 +119,7 @@ const Accomplishment = () => {
       <h2>Ajuda pessoas a se desenvolverem mais do que pensam que são</h2>
 
       <span className='ROW'>
-        <h1>MÉTODO DE ENSINO SPRINT DE RESULTADOS </h1>
+        <h1 className='method-title'>MÉTODO DE ENSINO SPRINT DE RESULTADOS </h1>
         <h3>Transforma 3 dias de frustração em 1 dia de resultado </h3>
       </span>
     </div>
